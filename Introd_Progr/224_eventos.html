@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.2.4. Eventos | Introducción a la programación </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Robles" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Introducción a la programación</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programación</a></li>
+   <li><a href="1_introduccin.html" class="daddy">1. Introducción</a>
+   <ul class="other-section">
+      <li><a href="11_implementar.html" class="no-ch">1.1. Implementar</a></li>
+      <li><a href="12_algoritmo.html" class="no-ch">1.2. Algoritmo</a></li>
+      <li><a href="13_estructuras_bsicas.html" class="no-ch">1.3. Estructuras básicas</a></li>
+      <li><a href="14_comprueba_lo_aprendido.html" class="no-ch">1.4. Comprueba lo aprendido</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_estructuras_secuenciales.html" class="current-page-parent daddy">2. Estructuras secuenciales</a>
+   <ul>
+      <li><a href="21_instrucciones_en_scratch.html" class="no-ch">2.1. Instrucciones en Scratch</a></li>
+      <li class="current-page-parent"><a href="22_bloques.html" class="current-page-parent daddy">2.2. Bloques</a>
+      <ul>
+         <li><a href="221_movimiento.html" class="no-ch">2.2.1. Movimiento</a></li>
+         <li><a href="222_apariencia.html" class="no-ch">2.2.2. Apariencia</a></li>
+         <li><a href="223_sonido.html" class="no-ch">2.2.3. Sonido</a></li>
+         <li id="active"><a href="224_eventos.html" class="active no-ch">2.2.4. Eventos</a></li>
+         <li><a href="225_control.html" class="no-ch">2.2.5. Control</a></li>
+         <li><a href="226_sensores.html" class="no-ch">2.2.6. Sensores</a></li>
+         <li><a href="227_operadores.html" class="no-ch">2.2.7. Operadores</a></li>
+         <li><a href="228_variables.html" class="no-ch">2.2.8. Variables</a></li>
+      </ul>
+      </li>
+      <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="223_sonido.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="225_control.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.2.4. Eventos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id59">
+<div class="iDevice emphasis0" >
+<div id="ta59_131_2" class="block iDevice_content">
+<div class="exe-text"><p>Un evento en Scratch puede definirse como una acción, como hacer clic en un objeto o presionar una determinada tecla. Las instrucciones de este bloque permiten iniciar un programa. Vamos a estudiar cada una de ellas:</p>
+<ul>
+<li><a href="#clicbandera">Al hacer clic en la bandera</a></li>
+<li><a href="#clictecla">Al presionar la tecla ...</a></li>
+<li><a href="#clicobjeto">Al hacer clic en este objeto</a></li>
+<li><a href="#cuando">Cuando ... &gt; ...</a></li>
+<li><a href="#recibir-enviar">Al recibir / enviar </a></li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id60">
+<div class="iDevice emphasis0" >
+<div id="ta60_132_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><a name="clicbandera"></a>Al hacer clic en la bandera <img src="CapturaBandera.png" alt="Al hacer clic en la bandera" width="127" height="88" /><br /></strong></p>
+<p>Si usamos esta instrucción, el programará comenzará cuando pulsemos la bandera verde </p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id61">
+<div class="iDevice emphasis0" >
+<div id="ta61_133_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><a name="clictecla"></a> Al presionar la tecla ...</strong></p>
+<p>Esta instrucción permite iniciar el programa de Scratch pulsando cualquiera de las teclas que se indican en la lista desplegable. Podremos elegir una letra (a-z), un número (0-9), o bien las teclas de espacio, flecha arriba, flecha abajo, flecha derecha o flecha izquierda. Si queremos que el programa empiece al pulsar cualquier tecla, habrá que seleccionar la opción cualquiera</p>
+<p style="text-align: center;"><img src="PresionarTecla.png" alt="Al presionar tecla" width="264" height="378" /><img src="PresionarTeclaNumeros.png" alt="Al presionar tecla números" width="282" height="393" /></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Comprueba lo aprendido" /></div><div class="feedback js-feedback js-hidden"><p>Crea un programa que realice lo siguiente:</p>
+<ul>
+<li>Si se pulsa la tecla 1, el personaje diga "Has pulsado el 1"</li>
+<li>Si se pulsa la flecha arriba, el personaje piense "¿Has pulsado la flecha arriba?"</li>
+<li>Si se pulsa la flecha espacio, el personaje diga "Se ha pulsado la tecla espacio"</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id64">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta64_136_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Implementa un programa siguiendo los siguientes pasos:</p>
+<ul>
+<li>Crea cuatro escenarios, uno que represente a cada estación (primavera, verano, otoño, invierno). Recuerda que las imágenes que uses deben ser libres de derechos. Puedes utilizar algún banco de imágenes como Pixabay</li>
+<li>Usa las instrucciones que necesites para que al pulsar cualquier tecla, el escenario cambie a la siguiente estación. Por ejemplo, si se está mostrando la imagen de la primavera y se pulsa cualquier tecla, se pase al verano. Si se vuelve a pulsar otra tecla, pasará al otoño y si se vuelve a seleccionar otra, al invierno. El programa debe ser un ciclo. Es decir, del invierno debe pasar a la primavera</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id62">
+<div class="iDevice emphasis0" >
+<div id="ta62_134_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><a name="clicobjeto"></a> Al hacer clic en este objeto</strong></p>
+<p>La instrucción <img src="ClicObjeto.png" alt="Al hacer clic en el objeto" width="165" height="89" /> permite iniciar un programa pulsando con el ratón sobre el objeto.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Comprueba lo aprendido" /></div><div class="feedback js-feedback js-hidden"><p>Crea un programa que tenga tres personajes distintos. Cada uno de ellos dirá un mensaje distinto cuando hagamos clic en él (el primero dirá "Hola", el segundo pensará "¿Ha pulsado sobre mí?" y el tercero dirá "Adiós"</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id63">
+<div class="iDevice emphasis0" >
+<div id="ta63_135_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><a name="cuando"></a> Cuando ... &gt; ... <br /></strong></p>
+<p>Este comando iniciará un conjunto de instrucciones cuando se cumpla una determinada condición. Scratch admite dos posibilidades:</p>
+<p><img src="Cuando.png" alt="Instrucción cuando" style="display: block; margin-left: auto; margin-right: auto;" width="280" height="175" />La primera opción de este bloque permite realizar alguna acción cuando el volumen del sonido llegue a un valor determinado. Por ejemplo, si usamos el siguiente código</p>
+<p><img src="CuandoSonido.png" alt="Ejemplo de la instrucción cuando...sonido" style="display: block; margin-left: auto; margin-right: auto;" width="247" height="107" />Podremos detener todos los sonidos cuando se alcance un volumen de 20. Esto permitiría establecer un valor máximo para el volumen.</p>
+<p>La segunda opción es similar, pero haciendo referencia al cronómetro. Este comando es útil si queremos mandar algún mensaje de aviso relacionado con el tiempo. Por ejemplo, con el siguiente código el objeto mostraría el mensaje "Se ha acabado el tiempo" cuando el cronómetro fuese mayor de 20</p>
+<p><img src="CuandoCronometro.png" alt="Instrucción cuando...cronómetro" style="display: block; margin-left: auto; margin-right: auto;" width="321" height="109" /></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Comprueba lo aprendido" /></div><div class="feedback js-feedback js-hidden"><p>Vamos a implementar un programa para ver cómo funciona la instrucción cuando. Inserta los siguientes bloques en Scratch: </p>
+<p style="text-align: center;"><img src="Cronometro.png" alt="Reiniciar cronómetro" width="130" height="107" /><img src="Cronometro2Segundos.png" alt="Cronómetro dos segundos" width="334" height="106" /></p>
+<p style="text-align: justify;">Responde a las siguientes preguntas: </p>
+<ul>
+<li style="text-align: justify;">¿Qué hace el programa?</li>
+<li style="text-align: justify;">Realiza las modificaciones que necesites para que el mensaje se muestre pasados seis segundos</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id65">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta65_137_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Vamos a implementar un juego en el que hay que adivinar el número en el que está pensando el personaje. Para ello: </p>
+<ul>
+<li>Crea tres escenarios: uno con el formato que quieras, otro con el texto "Has ganado" y otro con el texto "Game over"</li>
+<li>Tienes que tener tres personajes:
+<ul>
+<li>El principal</li>
+<li>Uno que denote acierto</li>
+<li>Otro que exprese fallo</li>
+</ul>
+</li>
+<li>El programa se inicia pulsando la bandera verde
+<ul>
+<li>Los objetos de acierto y fallo no se verán</li>
+<li>Se muestra solo el personaje principal, que dirá al usuario: "¿Adivinarás el número en el que estoy pensando? ¡¡¡Pulsa el número y lo sabrás!!!"</li>
+</ul>
+</li>
+<li>Piensa un número.
+<ul>
+<li>Si el usuario pulsa ese número, el escenario pasará a "Has ganado", el personaje principal se ocultará y se mostrará el objeto que muestra alegría</li>
+<li>Si el usuario ha fallado, entonces se mostrará el texto "Game over". El personaje principal se ocultará y se mostrará el objeto que muestra tristeza o error</li>
+</ul>
+</li>
+<li>Comprueba que el programa funciona correctamente y que siempre que pulses la bandera verde, el juego se inicia mostrando el escenario inicial y el personaje principal (el resto de objetos estará oculto)</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="223_sonido.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="225_control.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_escolares_js.js"></script></body></html>
